@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.mypy_cache/
+.ruff_cache/
+
+# Virtualenvs
+.venv/
+venv/
+env/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# === User-data hazards (DO NOT COMMIT) ===
+# This skill writes user PII into the cwd at runtime. If anyone ever runs
+# the skill from inside the cloned repo, these entries keep PII out of git.
+.resume/
+个人信息总览.md
+项目档案/
+resumes/
+
+# Build/clean leftovers
+*.docx.tmp
+*.docx.pii-backup
+*.docx.bak
